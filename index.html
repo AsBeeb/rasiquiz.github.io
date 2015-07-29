@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Projects</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet"  type="text/css" href="style.css"/>
 	<link rel="stylesheet" type="text/css" href="Prism.css" />
 	<script src="Prism.js"></script>
@@ -13,7 +14,10 @@
 		<br>
 		<pre><code class="language-javascript">setTimeout(function(){document.getElementsByClassName('titletext' + id)[0].style.marginLeft = '-' + $('.titletext' + id).innerWidth()/2 + 'px'}, 0)</code></pre>
 		<pre><code class="language-css">.p { font: 100% 'Helvetica'; top: 10px; background-color: #123456; }</code></pre>
-		<pre><code class="language-markup"><?php htmlspecialchars("<p class="text" style="font-size:30pt;">Projects</p>");?></code></pre>
+		<div style="padding:1em; margin:.5em 0; overflow:auto; background:#000; width:calc(100% - 2em);"><code class="language-markup">&lt;script&gt;</code><code class="language-javascript">titleSetup('write','Bregner','two')</code><code class="language-markup">&lt;/script&gt;</code></div>
+		<br>
+		<pre data-src="test.html"></pre>
+		<pre data-src="test.css"></pre>
 	</div>
 </body>
 </html>

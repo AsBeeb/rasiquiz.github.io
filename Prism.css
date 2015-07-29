@@ -1,4 +1,4 @@
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+http+php+php-extras */
+/* http://prismjs.com/download.html?themes=prism&languages=markup+css+css-extras+clike+javascript+http+php+php-extras&plugins=file-highlight+highlight-keywords */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -78,6 +78,10 @@ pre[class*="language-"] {
 	color: #969896;
 }
 
+.language-markup .token.punctuation {
+	color: #55a0f7;
+}
+
 .token.punctuation {
 	color: #646464;
 }
@@ -98,7 +102,8 @@ pre[class*="language-"] {
 	color:#21556d;
 }
 
-.token.tag {
+.token.tag,
+.token.attr-name {
 	color: #55a0f7;
 }
 
@@ -122,7 +127,6 @@ pre[class*="language-"] {
 	color:#46e1bf;
 }
 
-.token.attr-name,
 .token.char,
 .token.builtin,
 .token.inserted {
