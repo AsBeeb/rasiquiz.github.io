@@ -1,0 +1,46 @@
+.text {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-family: Helvetica;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.text2 {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-family: Helvetica;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#con {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 50%;
+  margin-top: -100px;
+}
+
+.centered {
+  text-align: center !important;
+}
+
+.examplebox {
+  position: relative;
+  background-color: #000;
+  height: 120px;
+}
+
+.list {
+  position: relative;
+  left: 30%;
+  width: 40%;
+  table-layout: fixed;
+}
+
+.listelem {
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+.titletext {
+		-webkit-font-smoothing: antialiased;
+		-moz-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+		position: absolute;
+		color: #fff;
+		font-family: Gotham;
+		font-weight: normal;
+		text-transform: uppercase;
+		font-size: 30pt;
+		letter-spacing: 19px;
+		padding: 10px 16px 6px 16px;
+		display: inline-table;
+		left: 50%;
+		top: 50%;
+	}
+
+	.titlebar {
+		position: absolute;
+		background-color: #fff;
+		-webkit-transition: width ease 2s, height ease 1s;
+		-moz-transition: width ease 2s, height ease 1s;
+		transition: width ease 2s, height ease 1s;
+	}

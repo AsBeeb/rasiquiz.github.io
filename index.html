@@ -2,22 +2,64 @@
 <html>
 <head>
 	<title>Projects</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<link rel="stylesheet"  type="text/css" href="style.css"/>
-	<link rel="stylesheet" type="text/css" href="Prism.css" />
-	<script src="Prism.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+	<link rel="stylesheet"  type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/Prism.css" />
+	<script src="scripts/Prism.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/Bordered Title.css" />
+	<script src="scripts/Bordered%20Title.js"></script>
+	<script src="scripts/js.js"></script>
+
+	<!-- Jquery offline -->
+	<script src="jquery.min.js"></script>
+
 </head>
 <body>
 	<div id="con">
 		<h1 class="text" style="font-size:30pt;">Projects</h1>
 		<h3 class="text">by rasiquiz</h3>
+		<br><br>
+		<h3 class="text">Creation of the title:</h3>
+		<pre class="centered"><code class="language-javascript">titleSetup(mode,title,id);</code></pre>
+		<h3 class="text">Functions for animating in and out:</h3>
+		<pre class="centered"><code class="language-javascript">titleAnimIn(id);</code></pre>
+		<pre class="centered"><code class="language-javascript">titleAnimOut(id);</code></pre>
 		<br>
-		<pre><code class="language-javascript">setTimeout(function(){document.getElementsByClassName('titletext' + id)[0].style.marginLeft = '-' + $('.titletext' + id).innerWidth()/2 + 'px'}, 0)</code></pre>
-		<pre><code class="language-css">.p { font: 100% 'Helvetica'; top: 10px; background-color: #123456; }</code></pre>
-		<div style="padding:1em; margin:.5em 0; overflow:auto; background:#000; width:calc(100% - 2em);"><code class="language-markup">&lt;script&gt;</code><code class="language-javascript">titleSetup('write','Bregner','two')</code><code class="language-markup">&lt;/script&gt;</code></div>
+		<h2 class="text2">Animation example:</h2>
+		<div class="examplebox"><script>titleSetup('write','Animations','anim')</script></div>
+		<br><br>
+
+		<h2 class="text2">Modes:</h2>
+		<h3 class="text"><code class="language-javascript">'write'</code> is used when the function is invoked in a <code class="language-markup">&lt;script&gt;</code> tag.</h3>
+		<h3 class="text"><code class="language-javascript">'return'</code> is used when the function is used in javascript.</h3>
 		<br>
-		<pre data-src="test.html"></pre>
-		<pre data-src="test.css"></pre>
+
+		<h2 class="text2">Title:</h2>
+		<h3 class="text">The title is simply the title you want to be shown.</h3>
+		<h3 class="text">Example: <code class="language-javascript">'random title'</code></h3>
+		<br>
+
+		<h2 class="text2">ID:</h2>
+		<h3 class="text">The id is a unique string used when invoking the animations.</h3>
+		<h3 class="text">Example: <code class="language-javascript">'uniqueid'</code></h3>
+		<br>
+
+		<h2 class="text2">Example:</h2>
+		<h3 class="text">Here the <code class="language-javascript">'write'</code> mode is used and the title being set is <code class="language-javascript">'Text'</code> and the title is given the unique id <code class="language-javascript">'text1'</code></h3>
+		<div class="centered" style="padding:1em; margin:.5em 0; overflow:auto; background:#000; width:calc(100% - 2em);"><code class="language-markup">&lt;script&gt;</code><code class="language-javascript">titleSetup('write','Text','text1')</code><code class="language-markup">&lt;/script&gt;</code></div>
+		<h3 class="text">Would output:</h3>
+		<div class="examplebox"><script>titleSetup('write','Text','text1')</script></div>
+		<table class="list"><tr>
+			<td class="listelem" onclick="titleAnimIn('text1')">
+				<h3 class="text2">
+					<code class="language-markup">onclick="</code>
+					<code class="language-javascript">titleAnimIn('text1')</code>
+					<code class="language-markup">"</code>
+				</h3></td>
+				<td class="listelem" onclick="titleAnimOut('text1')"><h3 class="text2">onclick="titleAnimOut('text1')"
+				</h3></td>
+				</tr></table>
+		<br>
 	</div>
 </body>
 </html>
